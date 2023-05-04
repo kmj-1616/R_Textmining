@@ -101,6 +101,6 @@ ggplot(top10, aes(x = reorder_within(word,n,president),
   coord_flip() +
   facet_wrap(~ president, scales = "free_y") +
   scale_x_reordered() +
-  labs(x=NULL) #+ #x축 삭제
-  #theme(text = element_text(family = "nanumgothic")) #폰트 
+  labs(x=NULL) + #x축 삭제
+  theme(text = element_text(family = "nanumgothic")) #폰트 
 
